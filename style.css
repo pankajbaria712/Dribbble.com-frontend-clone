@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(16, 114, 201);
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  font-size: 19px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 34px;
+  list-style: none;
+}
+
+.nav-links h4 {
+  font-size: 25px;
+}
+
+.nav-button {
+  margin: 0px 12px;
+}
+
+#login {
+  padding: 10px 23px;
+  border-radius: 25px;
+  color: #ffff;
+  background-color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+}
+
+#signup {
+  padding-right: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  background: #ffff;
+  color: #000;
+  border: none;
+}
