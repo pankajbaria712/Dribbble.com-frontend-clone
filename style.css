@@ -89,7 +89,7 @@ body {
 }
 
 .hero-left h1 {
-  font-size: 73px;
+  font-size: 70px;
   margin-bottom: 15px;
   font-weight: 900;
 }
@@ -127,14 +127,20 @@ body {
   border-radius: 25px;
   width: 600px;
   display: flex;
+  align-items: center; /* vertically center items */
   justify-content: space-between;
   margin-bottom: 10px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 .input input {
   border: none;
   outline: none;
   font-size: 16px;
+  flex: 1;
+  min-width: 0;
 }
 
 .input i {
@@ -175,7 +181,7 @@ video {
   object-fit: cover;
 }
 
-.hero-buttom {
+.hero-bottom {
   background-color: #f8f8fc;
   width: 100%;
   height: 80px;
@@ -185,7 +191,7 @@ video {
   justify-content: flex-start;
 }
 
-.hero-buttom button {
+.hero-bottom button {
   margin: 20px 0px 0px 50px;
   padding: 10px 15px;
   border-radius: 25px;
@@ -196,7 +202,52 @@ video {
   cursor: pointer;
 }
 
-.hero-buttom p {
+.hero-bottom p {
   text-align: center;
   font-size: 18px;
+  margin: 20px 0px 0px 10px;
+  padding: 10px 15px;
+}
+
+/*------------------ Cards section style -------------------- */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #ec5e95;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* The magic: show on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
