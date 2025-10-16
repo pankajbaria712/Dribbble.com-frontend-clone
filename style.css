@@ -12,8 +12,10 @@ body {
 #main-container {
   height: 100%;
   width: 100%;
-  background-color: rgb(16, 114, 201);
+  /* background-color: rgb(16, 114, 201); */
 }
+
+/* -------------------Navbar style------------------- */
 
 .navbar {
   height: 60px;
@@ -38,10 +40,12 @@ body {
   justify-content: space-between;
   gap: 34px;
   list-style: none;
+  cursor: pointer;
 }
 
 .nav-links h4 {
   font-size: 25px;
+  cursor: pointer;
 }
 
 .nav-button {
@@ -54,8 +58,9 @@ body {
   color: #ffff;
   background-color: rgb(0, 0, 0);
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 700;
   border: none;
+  cursor: pointer;
 }
 
 #signup {
@@ -65,4 +70,133 @@ body {
   background: #ffff;
   color: #000;
   border: none;
+  cursor: pointer;
+}
+
+/* -----------------Hero Section style--------------- */
+
+.hero-section {
+  /* height: 500px; */
+  margin-top: 27px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+
+.hero-left {
+  padding: 56px 65px 43px 61px;
+}
+
+.hero-left h1 {
+  font-size: 73px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+.hero-left p {
+  font-size: 20px;
+  margin-bottom: 43px;
+  width: 450px;
+}
+
+.hero-button button {
+  padding: 5px 8px;
+  /* font-size: 8px; */
+  background: #ffff;
+  color: #000;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.hero-button button i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+#active {
+  background-color: black;
+  color: #ffff;
+}
+
+.input {
+  padding: 5px 12px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.input i {
+  border-radius: 50%;
+  background-color: #ec5e95;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.hero-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-links h6 {
+  font-size: 16px;
+}
+
+#h-link {
+  padding: 5px 8px;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero-right {
+  margin: 37px 2px 25px 24px;
+  padding: 38px 34px 34px 12px;
+}
+
+video {
+  margin-right: 115px;
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.hero-buttom {
+  background-color: #f8f8fc;
+  width: 100%;
+  height: 80px;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-buttom button {
+  margin: 20px 0px 0px 50px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: #ffff;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-buttom p {
+  text-align: center;
+  font-size: 18px;
 }
