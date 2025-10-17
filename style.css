@@ -217,10 +217,9 @@ video {
 }
 
 .dropbtn {
-  background-color: #ec5e95;
-  color: white;
   padding: 10px 20px;
   border: none;
+  background-color: white;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -250,4 +249,109 @@ video {
 /* The magic: show on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.card-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 47px;
+}
+
+.card-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.card-buttons button {
+  padding: 5px 8px;
+  /* font-size: 8px; */
+  background: #ffff;
+  color: #000;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#ani {
+  background-color: #9893939d;
+  border-radius: 25px;
+}
+
+.filter button {
+  padding: 5px 8px;
+  font-size: 15px;
+  background: #ffff;
+  color: #000;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
+    "card9 card10 card11 card12";
+  grid-gap: 5px;
+}
+
+#card-1 {
+  background-color: #3d8ae8;
+  grid-area: card1;
+  height: 300px;
+}
+#card-2 {
+  background-color: rgb(31, 207, 25);
+  grid-area: card2;
+}
+#card-3 {
+  background-color: rgb(221, 33, 20);
+  grid-area: card3;
+}
+#card-4 {
+  background-color: rgb(71, 94, 16);
+  grid-area: card4;
+}
+#card-5 {
+  background-color: rgb(168, 78, 33);
+  grid-area: card5;
+}
+#card-6 {
+  background-color: rgb(34, 15, 77);
+  grid-area: card6;
+}
+#card-7 {
+  background-color: rgb(50, 162, 162);
+  grid-area: card7;
+}
+#card-8 {
+  background-color: rgb(156, 38, 206);
+  grid-area: card8;
+}
+#card-9 {
+  background-color: rgb(184, 68, 169);
+  grid-area: card9;
+}
+#card-10 {
+  background-color: rgb(27, 73, 30);
+  grid-area: card10;
+}
+#card-11 {
+  background-color: rgb(157, 99, 33);
+  grid-area: card11;
+}
+#card-12 {
+  background-color: rgb(175, 56, 163);
+  grid-area: card12;
 }
