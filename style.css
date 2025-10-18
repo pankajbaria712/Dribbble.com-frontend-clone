@@ -293,6 +293,7 @@ video {
 }
 
 .cards {
+  padding-left: 35px;
   width: 100%;
   height: 100%;
   display: grid;
@@ -303,44 +304,94 @@ video {
     "card1 card2 card3 card4"
     "card5 card6 card7 card8"
     "card9 card10 card11 card12";
-  grid-gap: 5px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation {
+  height: 40%;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  /* background: linear-gradient(transparent, black); */
+  position: absolute;
+  bottom: -10%;
+  transition: all ease 0.3s;
+  padding-bottom: 42px;
+}
+
+.card:hover .animation {
+  bottom: 0;
+}
+.card-bottom {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-bottom img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-bottom button {
+  border: none;
+  background-color: #fff;
+}
+
+.card {
+  padding: 10px 10px;
+}
+
+.card > img {
+  height: 240px;
+  width: 330px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 #card-1 {
-  background-color: #3d8ae8;
+  /* background-color: #3d8ae8; */
   grid-area: card1;
   height: 300px;
 }
 #card-2 {
-  background-color: rgb(31, 207, 25);
+  /* background-color: rgb(31, 207, 25); */
   grid-area: card2;
 }
 #card-3 {
-  background-color: rgb(221, 33, 20);
+  /* background-color: rgb(221, 33, 20); */
   grid-area: card3;
 }
 #card-4 {
-  background-color: rgb(71, 94, 16);
+  /* background-color: rgb(71, 94, 16); */
   grid-area: card4;
 }
 #card-5 {
-  background-color: rgb(168, 78, 33);
+  /* background-color: rgb(168, 78, 33); */
   grid-area: card5;
 }
 #card-6 {
-  background-color: rgb(34, 15, 77);
+  /* background-color: rgb(34, 15, 77); */
   grid-area: card6;
 }
 #card-7 {
-  background-color: rgb(50, 162, 162);
+  /* background-color: rgb(50, 162, 162); */
   grid-area: card7;
 }
 #card-8 {
-  background-color: rgb(156, 38, 206);
+  /* background-color: rgb(156, 38, 206); */
   grid-area: card8;
 }
 #card-9 {
-  background-color: rgb(184, 68, 169);
+  /* background-color: rgb(184, 68, 169); */
   grid-area: card9;
 }
 #card-10 {
