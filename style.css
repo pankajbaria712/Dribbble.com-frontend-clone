@@ -308,22 +308,29 @@ video {
 
 .card {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+/* 
+.card .image {
+  overflow: hidden;
+} */
 
 .animation {
+  color: #fff;
+  font-size: 27px;
   height: 40%;
-  width: 330px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 20px;
-  /* background: linear-gradient(transparent, black); */
+  background: linear-gradient(transparent, black);
   position: absolute;
-  bottom: -10%;
-  transition: all ease 0.3s;
-  padding-bottom: 42px;
+  bottom: -30%;
+  transition: all ease 0.6s;
+  /* overflow: hidden; */
+  /* padding-bottom: 42px; */
 }
 
 .card:hover .animation {
